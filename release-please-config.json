@@ -6,9 +6,9 @@
   "bump-patch-for-minor-pre-major": true,
   "packages": {
     ".": {
-      "component": "contractcase",
+      "component": "contract-case-kotlin",
       "extra-files": [
-        "build.gradle",
+        "build.gradle.kts",
         "README.md"
       ]
     }

@@ -1,0 +1,19 @@
+[versions]
+case = "0.13.0"
+case-boundary = "0.6.3"
+coroutines = "1.7.1"
+kotlin = "1.8.21"
+
+[libraries]
+case-mock-types = { module = "io.contract-testing.contractcase:case_example_mock_types", version.ref = "case" }
+case-matchers = { module = "io.contract-testing.contractcase:test-equivalence-matchers", version.ref = "case" }
+case-boundary = { module = "io.contract-testing.contractcase:case_boundary", version.ref = "case-boundary" }
+test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+
+[bundles]
+kotlin-test = ["coroutines-test", "test"]
+
+[plugins]
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+
