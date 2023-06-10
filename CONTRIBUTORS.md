@@ -16,10 +16,10 @@ documentation is an important starting point, as it describes the functionality 
 Any guidelines in those instructions also apply here. If any information is missing, or you have
 further questions, please open an issue.
 
-### Java DSL specific things
+### Kotlin DSL specific things
 
-This is the Java DSL package. New additions and code changes here should exclusively be for making
-the use of ContractCase idiomatic in Java / the JVM ecosystem.
+This is the Kotlin DSL package. New additions and code changes here should exclusively be for making
+the use of ContractCase idiomatic in Kotlin / the Kotlin ecosystem.
 
 If your change is broader, please put it
 in [one of the other packages](https://github.com/case-contract-testing/contract-case/blob/main/docs/maintainers/PackageStructure.md),
