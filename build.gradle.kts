@@ -18,9 +18,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(libs.case.mock.types)
-                api(libs.case.matchers)
-                api(libs.case.boundary)
+                api(libs.bundles.case)
 
                 implementation("com.diogonunes:JColor:5.5.1")
             }
@@ -29,6 +27,7 @@ kotlin {
         val commonTest by getting {
             dependencies {
                 implementation(libs.bundles.kotlin.test)
+                implementation(libs.bundles.ktor)
             }
         }
     }
