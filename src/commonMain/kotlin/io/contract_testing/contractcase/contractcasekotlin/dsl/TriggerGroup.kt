@@ -10,6 +10,7 @@ data class TriggerGroup<T>(
     val testErrorResponses: Map<String, TestErrorResponseFunction>
 )
 
+// TODO: Make trigger config a properly typed object.
 typealias Trigger<T> = (Map<String, Any>) -> T
 typealias TestResponseFunction<T> = (T) -> Unit
 typealias TestErrorResponseFunction = (Exception) -> Unit
